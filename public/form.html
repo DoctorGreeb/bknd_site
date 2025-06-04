@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bodybg">
+  <div class="side-panel1">
+    <h3>Мем дня <button onclick="nextMeme()">Ещё мем!</button></h3>
+    <img id="meme-image" src="meme/03.gif" alt="Мем дня" style="width: 100%; border-radius: 5px;">
+    
+  </div>
+  <div class="main-content">
+    <header class="header_box1">
+      <nav>
+        <a href="index.html" class="btn-link">Слайдер</a> 
+        <a href="slider.html" class="btn-link">Ползунок</a>
+        <button id="logout-btn">Выход</button>
+      </nav>
+      <span id="user-display"></span>
+    </header>
+    <h1>Форма авторизации</h1>
+    <form id="register-form">
+      <input type="text" id="username" placeholder="Имя" required>
+      <input type="password" id="password" placeholder="Пароль" required>
+      <input type="submit" value="Зарегистрироваться" class="submit">
+    </form>
+    <form id="login-form" style="display: none;">
+      <input type="text" id="login-username" placeholder="Имя" required>
+      <input type="password" id="login-password" placeholder="Пароль" required>
+      <input type="submit" value="Войти" class="submit">
+    </form>
+    <p id="result"></p>
+    <footer class="footer1">
+      <p>© 2025 Мой сайт. Все права защищены.</p>
+      <p>Email: info@example.com</p>
+    </footer>
+  </div>
+  <div class="side-panel1">
+    <p>Правая панель</p>
+  </div>
+  <script src="header.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

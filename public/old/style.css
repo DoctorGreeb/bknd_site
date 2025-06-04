@@ -1,0 +1,77 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: aliceblue;
+}
+.bgmain {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(255, 240, 251);
+  background-image: url('bg/body.png');
+}
+
+.bodybg {
+  background-image: url('bg/form.png');
+
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+
+.slider img {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.slider {
+  display: flex;
+  align-items: anchor-center;
+  flex-direction: column;
+  
+}
+
+input {
+  margin: 5px;
+}
+
+.submit {
+  margin: 5px;
+}
+
+.slider img#slide {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Плавный переход для opacity */
+}
+
+/* Класс для анимации при смене изображения */
+.slider img#slide.fade {
+  opacity: 0; /* Мгновенно скрываем изображение перед сменой */
+}
+
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color:rgb(200, 217, 233)
+}
+
+button:hover, a:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease-in-out;
+  border: none;
+}

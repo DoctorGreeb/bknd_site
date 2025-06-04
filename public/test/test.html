@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Modal Gallery</title>
+  <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <img src="https://png.pngtree.com/thumb_back/fh260/background/20230523/pngtree-woman-in-an-hooded-jacket-and-headphones-image_2688529.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNs2xexhLnt-gRo_VIzLO6dB0A_v2SLiYWg&s" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="https://postium.ru/wp-content/uploads/2023/06/shedevrum.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYqVL_1IG7RHQEijywwKEZ_cgN943QrXKSQ&s" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://png.pngtree.com/thumb_back/fh260/background/20230523/pngtree-woman-in-an-hooded-jacket-and-headphones-image_2688529.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNs2xexhLnt-gRo_VIzLO6dB0A_v2SLiYWg&s" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://postium.ru/wp-content/uploads/2023/06/shedevrum.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYqVL_1IG7RHQEijywwKEZ_cgN943QrXKSQ&s" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo" src="https://png.pngtree.com/thumb_back/fh260/background/20230523/pngtree-woman-in-an-hooded-jacket-and-headphones-image_2688529.jpg" onclick="currentSlide(1)" alt="Girl in hoodie">
+      </div>
+      <div class="column">
+        <img class="demo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNs2xexhLnt-gRo_VIzLO6dB0A_v2SLiYWg&s" onclick="currentSlide(2)" alt="Street view">
+      </div>
+      <div class="column">
+        <img class="demo" src="https://postium.ru/wp-content/uploads/2023/06/shedevrum.jpg" onclick="currentSlide(3)" alt="Art gallery">
+      </div>
+      <div class="column">
+        <img class="demo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYqVL_1IG7RHQEijywwKEZ_cgN943QrXKSQ&s" onclick="currentSlide(4)" alt="Lights">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="test.js"></script>
+</body>
+</html>

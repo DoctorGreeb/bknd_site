@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ползунок</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bgmain">
+  <div class="side-panel">
+    <h3>Мем дня <button onclick="nextMeme()">Ещё мем!</button></h3>
+    <img id="meme-image" src="meme/03.gif" alt="Мем дня" style="width: 100%; border-radius: 5px;">
+    
+  </div>
+  <div class="main-content">
+    <header class="header_box">
+      <nav>
+        <a href="index.html" class="btn-link">Главная</a> 
+        <!-- <a href="form.html" class="btn-link">Регистрация</a> -->
+        <button id="logout-btn">Выход</button>
+      </nav>
+      <span id="user-display"></span>
+    </header>
+    <h1>Тест цвета фона</h1>
+    <input type="range" id="range" min="0" max="100" value="50">
+    <p>Значение: <span id="range-value">50</span></p>
+    <footer>
+      <p>© 2025 Мой сайт. Все права защищены.</p>
+      <p>Email: info@example.com</p>
+    </footer>
+  </div>
+  <div class="side-panel">
+    <p>Правая панель</p>
+  </div>
+  <script src="header.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
